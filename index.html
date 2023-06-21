@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <style>
+      body {
+        font-family: Verdana, Arial, sans-serif;
+      }
+      td {
+        padding: 6px;
+        border-bottom: 1px solid gray;
+      }
+      th {
+        background-color: #b7d0ff;
+        font-weight: bold;
+        padding: 12px 0px 12px 6px;
+        border-bottom: 2px solid grey;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 16px;
+        text-align: left;
+        table-layout: fixed;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #ffffff;
+      }
+      h1 {
+        text-align: center;
+      }
+      .center {
+        margin: auto;
+        padding: 60px;
+        width: 60%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="center">
+      <h1>Municipality employment statistics in Finland</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Municipality</th>
+            <th>Population</th>
+            <th>Employment amount</th>
+            <th>Employment-%</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
